@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffe4e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#feedback {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#attempts {
+  margin-top: 10px;
+}
+
+#restartGame {
+  margin-top: 20px;
+  background-color: #28a745;
+}
+
+.hearts {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.heart {
+  font-size: 30px;
+  color: red;
+  animation: float 1.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
